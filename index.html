@@ -1,586 +1,64 @@
 <!DOCTYPE html>
-<html class="wf-poppins-n3-active wf-poppins-n2-active wf-montserrat-n3-active wf-montserrat-n1-active wf-montserrat-n6-active wf-montserrat-n5-active wf-montserrat-n7-active wf-montserrat-n8-active wf-montserrat-n4-active wf-montserrat-n9-active wf-montserrat-n2-active wf-poppins-n4-active wf-poppins-n1-active wf-poppins-i1-active wf-poppins-i2-active wf-poppins-i3-active wf-poppins-i4-active wf-poppins-n5-active wf-poppins-i5-active wf-poppins-n6-active wf-poppins-i9-active wf-poppins-i8-active wf-montserrat-i7-active wf-montserrat-i8-active wf-montserrat-i5-active wf-montserrat-i3-active wf-montserrat-i2-active wf-montserrat-i6-active wf-montserrat-i4-active wf-montserrat-i1-active wf-poppins-i7-active wf-poppins-n8-active wf-poppins-i6-active wf-poppins-n9-active wf-poppins-n7-active wf-active" lang="pt-BR" prefix="og: https://ogp.me/ns#" style="scroll-behavior: smooth;">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8"/>
-    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Clínica Romana - Creative Design System</title>
-    <!-- Include all original scripts and styles -->
-    <script async="" src="assets/destination_560e1ef9a266.js" type="text/javascript"></script>
-    <script async="" src="assets/js_1a55ef64d576.js" type="text/javascript"></script>
-    <script defer="" src="data:text/javascript;base64,V2ViRm9udENvbmZpZz17Z29vZ2xlOntmYW1pbGllczpbIlBvcHBpbnM6MTAwLDEwMGl0YWxpYywyMDAsMjAwaXRhbGljLDMwMCwzMDBpdGFsaWMsNDAwLDQwMGl0YWxpYyw1MDAsNTAwaXRhbGljLDYwMCw2MDBpdGFsaWMsNzAwLDcwMGl0YWxpYyw4MDAsODAwaXRhbGljLDkwMCw5MDBpdGFsaWMiLCJNb250c2VycmF0OjEwMCwxMDBpdGFsaWMsMjAwLDIwMGl0YWxpYywzMDAsMzAwaXRhbGljLDQwMCw0MDBpdGFsaWMsNTAwLDUwMGl0YWxpYyw2MDAsNjAwaXRhbGljLDcwMCw3MDBpdGFsaWMsODAwLDgwMGl0YWxpYyw5MDAsOTAwaXRhbGljJmRpc3BsYXk9c3dhcCJdfX07aWYodHlwZW9mIFdlYkZvbnQ9PT0ib2JqZWN0IiYmdHlwZW9mIFdlYkZvbnQubG9hZD09PSJmdW5jdGlvbiIpe1dlYkZvbnQubG9hZChXZWJGb250Q29uZmlnKX0="></script>
-    <script data-optimized="1" defer="" src="assets/webfontloader_40ba31c0c7c9.js"></script>
-    <link data-optimized="2" href="assets/06e50743fa07c02f2dde57d1a19b0d_188f94a216b0.css" rel="stylesheet"/>
-    <script id="jquery-core-js" src="assets/jquery_95de91bbd564.js"></script>
-    <link href="assets/css_edb9a7e05c1c.css" media="all" rel="stylesheet"/>
-    
-    <style data-scroll-fix="true">
-        /* CSS Variable Overrides to spread the new colors into Elementor */
-        :root {
-            --e-global-color-primary: #A7998B !important;
-            --e-global-color-secondary: #DAD2C2 !important;
-            --e-global-color-text: #A7998B !important;
-            --e-global-color-accent: #DAD2C2 !important;
-            --bg-pure-white: #FFFFFF;
-            --bg-off-white: #FCFCFC;
-            --soft-shadow: 0 20px 40px rgba(0,0,0,0.03);
-            --border-radius-lg: 24px;
-        }
-
-        /* Scroll fixes for offline viewing */
-        html, body {
-            overflow: auto !important;
-            overflow-x: hidden !important;
-            height: auto !important;
-            min-height: 100% !important;
-            scroll-behavior: smooth !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-            background-color: var(--bg-pure-white);
-        }
-        
-        body, .wrapper, main, #__next, #app, .page, .content {
-            opacity: 1 !important;
-            visibility: visible !important;
-            transform: none !important;
-        }
-        
-        .loader, .preloader, .loading, [class*="loader"], [class*="preloader"] {
-            display: none !important;
-            opacity: 0 !important;
-        }
-
-        /* Custom Floating Glass Nav */
-        .ds-nav-wrapper {
-            position: fixed;
-            top: 20px;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            z-index: 99999;
-            pointer-events: none;
-        }
-        
-        .ds-nav {
-            pointer-events: auto;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 12px 30px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            box-shadow: 0 10px 30px rgba(167, 153, 139, 0.08);
-            animation: fadeInDown 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        
-        .ds-nav a {
-            font-family: 'Poppins', sans-serif;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: rgba(167, 153, 139, 0.8);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-        }
-        
-        .ds-nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 50%;
-            width: 0%;
-            height: 1px;
-            background: #A7998B;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            transform: translateX(-50%);
-        }
-
-        .ds-nav a:hover {
-            color: #A7998B;
-        }
-        
-        .ds-nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Outline Text (The "Transparent Letters" feature) */
-        .ds-hero-outline {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16vw;
-            font-weight: 700;
-            line-height: 1;
-            text-transform: uppercase;
-            color: transparent;
-            -webkit-text-stroke: 1px rgba(218, 210, 194, 0.5); /* Accent Gold highly transparent */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            white-space: nowrap;
-            z-index: 0;
-            pointer-events: none;
-            user-select: none;
-            animation: scaleIn 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        /* Hero Layout - Creative disposition */
-        .ds-creative-hero {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            background: var(--bg-off-white);
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.02);
-            margin-bottom: 80px;
-        }
-
-        .ds-hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .ds-hero-image-wrapper {
-            position: absolute;
-            width: 320px;
-            height: 420px;
-            border-radius: 200px; /* Zephyr-style soft oval */
-            overflow: hidden;
-            z-index: 1;
-            box-shadow: var(--soft-shadow);
-            transform: translateY(20px) rotate(-5deg);
-            opacity: 0;
-            animation: customFloatUp 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
-        }
-
-        .ds-hero-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(20%) contrast(1.1);
-        }
-
-        /* Section Layouts */
-        .ds-section {
-            padding: 100px 40px;
-            max-width: 1300px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .ds-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 42px;
-            font-weight: 300;
-            color: #A7998B; 
-            margin-bottom: 60px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(218, 210, 194, 0.3);
-            text-transform: none;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .ds-title::after {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 60px;
-            height: 2px;
-            background: #DAD2C2;
-        }
-        
-        .ds-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .ds-card {
-            background: #FFFFFF;
-            padding: 40px;
-            border-radius: var(--border-radius-lg);
-            border: 1px solid rgba(0,0,0,0.02);
-            box-shadow: var(--soft-shadow);
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .ds-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 30px 60px rgba(167, 153, 139, 0.08); border: 1px solid rgba(218, 210, 194, 0.2);
-        }
-        
-        .ds-label {
-            font-family: 'Poppins', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 11px;
-            color: #b0a7a0;
-            margin-bottom: 20px;
-            display: block;
-            border-bottom: 1px dashed rgba(218, 210, 194, 0.4);
-            padding-bottom: 10px;
-        }
-        
-        .ds-color-swatch-large {
-            width: 100%;
-            height: 160px;
-            border-radius: 16px;
-            margin-bottom: 20px;
-            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
-            display:flex;
-            align-items:flex-end;
-            padding: 20px;
-            transition: transform 0.5s ease;
-        }
-
-        .ds-card:hover .ds-color-swatch-large {
-            transform: scale(1.02);
-        }
-
-        .ds-color-hex-large {
-            font-family: monospace;
-            font-size: 14px;
-            color: #fff;
-            letter-spacing: 1px;
-            mix-blend-mode: difference;
-        }
-
-        .ds-motion-stage {
-            height: 200px;
-            border-radius: 16px;
-            background: var(--bg-off-white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(218, 210, 194, 0.3);
-        }
-
-        .ds-motion-element {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #A7998B, #DAD2C2);
-            border-radius: 50%;
-            box-shadow: 0 10px 20px rgba(167, 153, 139, 0.2);
-        }
-
-        /* Keyframes */
-        @keyframes scaleIn {
-            0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
-            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-        }
-
-        @keyframes customFloatUp {
-            0% { opacity: 0; transform: translateY(60px) rotate(-5deg); }
-            100% { opacity: 0.15; transform: translateY(0) rotate(-2deg); } /* Keeps image very subtle behind text */
-        }
-
-        .animated-delay-1 { animation-delay: 0.2s !important; }
-        .animated-delay-2 { animation-delay: 0.4s !important; }
-        .animated-delay-3 { animation-delay: 0.6s !important; }
-        
-        /* Typography overrides for clean display */
-        .ds-card .elementor-heading-title { color: #A7998B !important; margin-bottom: 0; }
-        .ds-card p { color: #888; line-height: 1.8; }
-        
-        .ds-icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
-        }
-
-        .ds-icon-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
-            background: #fff;
-            border-radius: 16px;
-            border: 1px solid rgba(0,0,0,0.03);
-            transition: all 0.3s ease;
-        }
-
-        .ds-icon-box:hover {
-            background: #FCFCFC;
-            transform: translateY(-3px);
-            border-color: rgba(218, 210, 194, 0.5);
-        }
-
-        .ds-icon-box i, .ds-icon-box svg {
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #A7998B;
-            fill: #A7998B;
-            transition: all 0.3s ease;
-        }
-
-        .ds-icon-box:hover i, .ds-icon-box:hover svg {
-            transform: scale(1.1);
-        }
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garanta sua Vaga</title>
+    <!-- Use DS fonts: Montserrat and Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,"> <!-- prevent favicon request -->
 </head>
-<body class="home wp-singular page-template-default page page-id-44 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-default elementor-default elementor-kit-3 elementor-page elementor-page-44 e--ua-blink e--ua-mac e--ua-webkit cookies-not-set litespeed_lazyloaded" data-elementor-device-mode="desktop" data-rsssl="1" style="scroll-behavior: smooth;">
+<body>
+    <main class="form-container">
+        <div class="card">
+            <header class="card-header">
+                <h1>Preencha o formulário abaixo e garanta sua vaga</h1>
+                <div class="warning-box">
+                    <p><strong>Atenção:</strong> Preencha corretamente seus dados para garantir sua participação.</p>
+                </div>
+            </header>
 
-    <!-- FLOATING NAV -->
-    <div class="ds-nav-wrapper">
-        <nav class="ds-nav">
-            <a href="#hero">Hero</a>
-            <a href="#typography">Typography</a>
-            <a href="#colors">Colors</a>
-            <a href="#components">Components</a>
-            <a href="#motion">Motion</a>
-            <a href="#icons">Icons</a>
-        </nav>
-    </div>
+            <form action="#" method="POST" class="capture-form">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
 
-    <!-- HERO SECTION (CREATIVE DESIGN) -->
-    <section class="ds-creative-hero" id="hero">
-        <div class="ds-hero-outline">ROMANA</div>
-        
-        <div class="ds-hero-image-wrapper">
-            <!-- Utilizing the image from the site -->
-            <img src="assets/Rectangle-1-1_db96ac508c25.jpg" alt="Aesthetic" />
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required maxlength="15">
+                </div>
+
+                <div class="input-group">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="comunicados">
+                        <span class="checkmark"></span>
+                        <span class="text">Concordo em receber convites, avisos e comunicados do Wilton por E-mail/SMS/WhatsApp</span>
+                    </label>
+                    
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="grupos">
+                        <span class="checkmark"></span>
+                        <span class="text">Aceito receber convites para grupos de WhatsApp do Wilton</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">GARANTIR MINHA VAGA</button>
+            </form>
         </div>
+    </main>
 
-        <div class="ds-hero-content animated fadeInUp">
-            <h2 class="elementor-heading-title" style="font-family: 'Instrument Serif', serif; font-size: 80px; font-weight: 300; color: #A7998B; margin-bottom: 20px; text-transform: none;">
-                Ovation Design System
-            </h2>
-            <p style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #888; max-width: 500px; margin: 0 auto 40px; line-height: 1.6;">
-                A living pattern library embracing whitespace, typographic transparency, and sophisticated element compositions.
-            </p>
-            <div class="elementor-button-wrapper">
-                <a class="elementor-button elementor-button-link elementor-size-md" href="#typography" style="background-color: transparent; border: 1px solid #DAD2C2; color: #A7998B; border-radius: 50px; padding: 15px 35px; transition: all 0.3s ease;">
-                    <span class="elementor-button-content-wrapper">
-                        <span class="elementor-button-text">Explorar Padrões</span>
-                        <span class="elementor-button-icon" style="margin-left: 10px;">
-                            <i aria-hidden="true" class="hm hm-arrow-right"></i> 
-                        </span>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 1. TYPOGRAPHY -->
-    <section class="ds-section" id="typography">
-        <h2 class="ds-title animated fadeInUp">Typography Elements</h2>
-        
-        <div class="ds-grid">
-            <div class="ds-card animated fadeInUp animated-delay-1">
-                <span class="ds-label">Heading 1 / 2 (Primary Title)</span>
-                <div class="elementor-widget-heading" style="margin-bottom: 20px;">
-                    <h2 class="elementor-heading-title elementor-size-default" style="font-size: 42px;">Descubra a leveza de se cuidar</h2>
-                </div>
-                <div style="display:flex; justify-content: space-between; font-family: monospace; font-size: 12px; color: #bbb;">
-                    <span>Montserrat</span>
-                    <span>Responsive / 1.2</span>
-                </div>
-            </div>
-            
-            <div class="ds-card animated fadeInUp animated-delay-2">
-                <span class="ds-label">Heading 3 / 4 (Subtitle)</span>
-                <div class="elementor-widget-heading" style="margin-bottom: 20px;">
-                    <p class="elementor-heading-title elementor-size-default" style="font-size: 24px;">Um propósito simples e admirável: aprimorar a qualidade de vida</p>
-                </div>
-                <div style="display:flex; justify-content: space-between; font-family: monospace; font-size: 12px; color: #bbb;">
-                    <span>Montserrat</span>
-                    <span>Responsive / 1.4</span>
-                </div>
-            </div>
-            
-            <div class="ds-card animated fadeInUp animated-delay-3" style="grid-column: 1 / -1;">
-                <span class="ds-label">Paragraph / Regular (Body Text)</span>
-                <div class="elementor-widget-text-editor" style="max-width: 800px; margin-bottom: 20px;">
-                    <p>Com um time de profissionais qualificados, nossa clínica oferece uma abordagem integral para promover sua saúde e vitalidade. Da endocrinologia à tricologia, do transplante capilar à cirurgia plástica e estética, e, passando pela ginecologia, cada núcleo contribui para uma experiência única e personalizada.</p>
-                </div>
-                <div style="display:flex; justify-content: flex-start; gap: 20px; font-family: monospace; font-size: 12px; color: #bbb;">
-                    <span>Poppins</span>
-                    <span>16px / 1.6</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. COLORS & SURFACES -->
-    <section class="ds-section" id="colors">
-        <h2 class="ds-title animated fadeInUp">Colors & Surfaces</h2>
-        
-        <div class="ds-grid">
-            <div class="ds-card animated fadeInUp animated-delay-1">
-                <span class="ds-label">Brand Dark</span>
-                <div class="ds-color-swatch-large" style="background:#A7998B;">
-                    <span class="ds-color-hex-large">#A7998B</span>
-                </div>
-                <p style="font-size: 13px; color: #888;">Primary branding color used for text, heavy contrast elements, and solid borders.</p>
-            </div>
-
-            <div class="ds-card animated fadeInUp animated-delay-2">
-                <span class="ds-label">Accent Gold</span>
-                <div class="ds-color-swatch-large" style="background:#DAD2C2;">
-                    <span class="ds-color-hex-large">#DAD2C2</span>
-                </div>
-                <p style="font-size: 13px; color: #888;">Secondary accent color used for highlights, thin structural dividers, and active states.</p>
-            </div>
-
-            <div class="ds-card animated fadeInUp animated-delay-3">
-                <span class="ds-label">Overlay Dark / Sand</span>
-                <div class="ds-color-swatch-large" style="background:#EDE5DB;">
-                    <span class="ds-color-hex-large" style="color: #A7998B;">#EDE5DB</span>
-                </div>
-                <p style="font-size: 13px; color: #888;">Tertiary color used for soft backgrounds, notification areas, and contrast panels.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. UI COMPONENTS -->
-    <section class="ds-section" id="components">
-        <h2 class="ds-title animated fadeInUp">UI Components</h2>
-        
-        <div class="ds-grid">
-            <div class="ds-card animated fadeInUp animated-delay-1">
-                <span class="ds-label">Buttons (Primary Default)</span>
-                <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start;">
-                    <div class="elementor-widget-button">
-                        <div class="elementor-button-wrapper">
-                            <a class="elementor-button elementor-button-link elementor-size-sm" href="#" style="background-color: #A7998B; color: #fff; padding: 12px 24px; border-radius: 4px; border:none; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-                                <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-icon">
-                                        <i aria-hidden="true" class="hm hm-arrow-right1"></i> 
-                                    </span>
-                                    <span class="elementor-button-text">Agende uma consulta</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ds-card animated fadeInUp animated-delay-2">
-                <span class="ds-label">Buttons (Outline / Gold)</span>
-                <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start;">
-                    <div class="elementor-widget-button">
-                        <div class="elementor-button-wrapper">
-                            <a class="elementor-button elementor-button-link elementor-size-md" href="#" style="background-color: transparent; border: 1px solid #DAD2C2; color: #A7998B; padding: 15px 35px; border-radius: 50px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-                                <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-icon">
-                                        <i aria-hidden="true" class="hm hm-arrow-right"></i> 
-                                    </span>
-                                    <span class="elementor-button-text">Conheça a clínica</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ds-card animated fadeInUp animated-delay-3" style="grid-column: 1 / -1; padding: 0;">
-                <div style="padding: 40px;">
-                    <span class="ds-label">Card Overlays (JetListing Style)</span>
-                </div>
-                <!-- Clean, edge-to-edge card block mimicking Zephyr / Romana -->
-                <div style="width: 100%; display: flex; overflow: hidden; border-bottom-left-radius: var(--border-radius-lg); border-bottom-right-radius: var(--border-radius-lg);">
-                    <div style="flex: 1; height: 300px; position: relative; background: url('assets/Rectangle-1-1_db96ac508c25.jpg') center/cover; position: relative; overflow: hidden;">
-                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent); display: flex; align-items: flex-end; padding: 40px; color: #fff; transform: translateY(10px); transition: all 0.4s ease;" class="hover-card-inner">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #fff !important; font-size: 28px; margin: 0;">Tratamentos Capilares</h2>
-                            <i aria-hidden="true" class="hm hm-arrow-right" style="font-size: 24px; margin-left: 20px;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Quick CSS injection for hover effect above -->
-            <style>
-                .ds-card:hover .hover-card-inner { transform: translateY(0); padding-bottom: 50px; }
-            </style>
-        </div>
-    </section>
-
-    <!-- 4. MOTION & INTERACTION -->
-    <section class="ds-section" id="motion">
-        <h2 class="ds-title animated fadeInUp">Motion Behaviors</h2>
-        
-        <div class="ds-grid">
-            <div class="ds-card animated fadeInUp animated-delay-1">
-                <span class="ds-label">CSS Float (Continuous)</span>
-                <div class="ds-motion-stage">
-                    <div class="ds-motion-element" style="animation: bounce 3s ease-in-out infinite;"></div>
-                </div>
-                <p style="text-align: center; margin-top: 15px; font-family: monospace; color:#888;">animated bounce</p>
-            </div>
-            
-            <div class="ds-card animated fadeInUp animated-delay-2">
-                <span class="ds-label">Entrance (Fade In Up)</span>
-                <div class="ds-motion-stage">
-                    <div class="ds-motion-element" style="animation: fadeInUp 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;"></div>
-                </div>
-                <p style="text-align: center; margin-top: 15px; font-family: monospace; color:#888;">animated fadeInUp</p>
-            </div>
-
-            <div class="ds-card animated fadeInUp animated-delay-3" style="border: 2px solid #DAD2C2; cursor: pointer;">
-                <span class="ds-label">Hover (Lift & Shadow)</span>
-                <div class="ds-motion-stage" style="background: transparent; border: none;">
-                    <div class="ds-motion-element" style="transition: all 0.4s ease; transform: scale(1); box-shadow: 0 10px 20px rgba(167,153,139,0.2);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 20px 40px rgba(167,153,139,0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 20px rgba(167,153,139,0.2)';"></div>
-                </div>
-                <p style="text-align: center; margin-top: 15px; font-family: monospace; color:#A7998B;">Hover over the card or circle</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. ICONS -->
-    <section class="ds-section" id="icons">
-        <h2 class="ds-title animated fadeInUp">Iconography</h2>
-        
-        <div class="ds-icon-grid animated fadeInUp animated-delay-1">
-            <div class="ds-icon-box">
-                <i aria-hidden="true" class="hm hm-arrow-right"></i>
-                <span style="font-family: monospace; font-size: 11px;">arrow-right</span>
-            </div>
-            
-            <div class="ds-icon-box">
-                <i aria-hidden="true" class="hm hm-arrow-right1"></i>
-                <span style="font-family: monospace; font-size: 11px;">arrow-right-1</span>
-            </div>
-            
-            <div class="ds-icon-box">
-                <svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#A7998B">
-                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
-                </svg>
-                <span style="font-family: monospace; font-size: 11px;">whatsapp</span>
-            </div>
-            
-            <div class="ds-icon-box">
-                <svg fill="none" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.4221 12H21.4221" stroke="#A7998B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                    <path d="M3 6H21" stroke="#A7998B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                    <path d="M3 18H21" stroke="#A7998B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                </svg> 
-                <span style="font-family: monospace; font-size: 11px;">menu</span>
-            </div>
-        </div>
-        <div style="height: 100px;"></div> <!-- Bottom Spacing -->
-    </section>
-
+    <script src="script.js"></script>
 </body>
 </html>

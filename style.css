@@ -1,0 +1,302 @@
+:root {
+    --bg-color: #FCFCFC; /* bg-off-white */
+    --card-bg: #FFFFFF; /* ds-card */
+    --brand-dark: #A7998B; /* Primary branding color */
+    --accent-gold: #DAD2C2; /* Secondary accent color */
+    --overlay-sand: #EDE5DB; /* Tertiary color */
+    
+    --text-main: #A7998B;
+    --text-body: #888888;
+    
+    --input-bg: #FFFFFF;
+    --border-color: rgba(218, 210, 194, 0.5); /* Accent gold transparent */
+    
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 4px;
+    --shadow-soft: 0 20px 40px rgba(0,0,0,0.03);
+    --shadow-hover: 0 30px 60px rgba(167, 153, 139, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.02);
+    padding: 48px 40px;
+    box-shadow: var(--shadow-soft);
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid rgba(218, 210, 194, 0.2);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.card-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--brand-dark);
+    margin-bottom: 20px;
+    line-height: 1.3;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.card-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: var(--accent-gold);
+}
+
+.warning-box {
+    background-color: var(--overlay-sand);
+    color: var(--brand-dark);
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    text-align: left;
+    border-left: 4px solid var(--accent-gold);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.warning-box strong {
+    font-weight: 600;
+}
+
+.capture-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--brand-dark);
+}
+
+.input-group input {
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--input-bg);
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--brand-dark);
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--brand-dark);
+    box-shadow: 0 0 0 3px rgba(167, 153, 139, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #cbd5e1;
+    font-weight: 300;
+}
+
+/* Checkbox specific styles */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background-color: #FAFAFA;
+    padding: 18px;
+    border-radius: var(--radius-sm);
+    border: 1px dashed var(--border-color);
+    margin-top: 4px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-group:hover {
+    border-color: var(--brand-dark);
+    background-color: #FFFFFF;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text-body);
+    position: relative;
+    user-select: none;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.custom-checkbox:hover {
+    color: var(--brand-dark);
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    min-width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-top: -2px; /* optical alignment */
+    position: relative;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    border-color: var(--brand-dark);
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-top: -2px;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    animation: checkAnim 0.2s ease-in-out forwards;
+}
+
+@keyframes checkAnim {
+    0% { transform: scale(0) rotate(45deg); }
+    100% { transform: scale(1) rotate(45deg); }
+}
+
+.custom-checkbox .text {
+    flex: 1;
+}
+
+/* Call to action button matching "Buttons (Primary Default)" from Design System */
+.submit-btn {
+    background-color: var(--brand-dark);
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 18px 24px;
+    border: none;
+    border-radius: var(--radius-sm); /* Using 4px for Primary Default from DS */
+    cursor: pointer;
+    margin-top: 8px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+    box-shadow: 0 10px 20px rgba(167, 153, 139, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(167, 153, 139, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(167, 153, 139, 0.2);
+}
+
+/* Update focus ring for accessibility */
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(167, 153, 139, 0.3), 0 10px 20px rgba(167, 153, 139, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 40px 24px;
+        border-radius: var(--radius-md);
+    }
+    
+    .card-header h1 {
+        font-size: 24px;
+    }
+
+    body {
+        padding: 16px;
+    }
+}
